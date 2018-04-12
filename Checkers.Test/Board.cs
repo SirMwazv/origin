@@ -14,16 +14,32 @@ namespace Checkers.Test
     }
     public enum Color { Black, White }
     public enum Status { Captured, Active }
-    public interface IPiece
+   
+    public class Board : IBoard
     {
-        IEnumerable<int> NormalMoves(IBoard board);
-        IEnumerable<int> CapturingMoves(IBoard board);
-        Status Status { get; }
-        Color Color { get; }
-        int Position { get; }
-        void Move(int destination);
-    }
-    public class Board
-    {
+        public void Move(IPiece piece, int destination)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IPiece Occupant(int position)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<int> Pieces(Color color)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Promote(IPiece piece)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RemoveCapturedPieces()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
