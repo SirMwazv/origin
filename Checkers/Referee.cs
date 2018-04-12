@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Checkers.Test
+namespace Checkers
 {
     public interface IReferee
     {
