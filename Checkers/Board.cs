@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace Checkers.Test
+namespace Checkers
 {
     public interface IBoard
     {
@@ -14,7 +14,7 @@ namespace Checkers.Test
     }
     public enum Color { Black, White }
     public enum Status { Captured, Active }
-   
+
     public class Board : IBoard
     {
         public void Move(IPiece piece, int destination)

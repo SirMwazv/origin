@@ -11,7 +11,6 @@ namespace Checkers
         void Play();
     }
     public class IllegalMoveException : ApplicationException { }
-
     class Referee
     {
     }
