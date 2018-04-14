@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Checkers
 {
@@ -13,8 +14,19 @@ namespace Checkers
         int Position { get; }
         void Move(int destination);
     }
-    class Piece
+  public  class Piece
     {
+        public Piece(Color c, int pos)
+        {
+            Status = Status.Active;
+            Position = pos;
+            Color = c;
+        }
+        public virtual Status Status { get; set; }
+        public virtual Color Color { get; private set; }
+        public virtual int Position { get; private set; }
+
+
        
     }
 }
